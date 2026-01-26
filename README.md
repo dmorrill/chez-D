@@ -32,6 +32,39 @@ A DIY automated cooking system built from:
 
 ---
 
+## Human-in-the-Loop: How We Get to Full Automation
+
+We're building incrementally, proving each subsystem works before adding the next. Each cook test increases what the robot handles while reducing what the human does.
+
+### Cook Test v0.1 - Observer Mode
+**Robot does:** Nothing (sensors only)
+**Human does:** Everything (heat, stir, add water)
+**What we prove:** Sensors work. Can detect temperature, color, pan weight.
+
+### Cook Test v0.2 - Automated Heat Control
+**Robot does:** Controls heat (TILLREDA hack)
+**Human does:** Stirs when prompted, adds water when prompted
+**What we prove:** Heat control prevents burning. Robot says "stir now" and you do it.
+
+### Cook Test v0.3 - Heat + Water Pump
+**Robot does:** Controls heat, pumps water automatically
+**Human does:** Stirs when prompted
+**What we prove:** Water dispensing works. Robot detects when onions are dry and adds water.
+
+### Cook Test v1.0 - Full Automation
+**Robot does:** Heat, stirring (Dynamixel), water pump
+**Human does:** Loads onions, presses start, eats onions
+**What we prove:** End-to-end automated caramelized onions.
+
+### Why This Approach?
+
+1. **Faster feedback** - Don't build everything before testing anything
+2. **Isolate failures** - When something breaks, you know which subsystem
+3. **Motivation** - Small wins along the way (edible onions at every step!)
+4. **Safety** - Human oversight while working with heat and moving parts
+
+---
+
 ## Documentation
 
 | Doc | Description |
