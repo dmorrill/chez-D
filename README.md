@@ -143,7 +143,7 @@ Your personal robot chef, cooking at your place.
 
 ## License
 
-TBD - Considering MIT or Apache 2.0 for open-source release.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
