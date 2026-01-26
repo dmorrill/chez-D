@@ -73,10 +73,6 @@ We're building incrementally, proving each subsystem works before adding the nex
 | [SHOPPING-LIST.md](./SHOPPING-LIST.md) | Complete parts list with links (~$570 Phase 1, ~$1,943 total) |
 | [LABEL-GUIDE.md](./LABEL-GUIDE.md) | Printable guide for organizing parts by subsystem |
 | [ASSEMBLY-MANUAL.md](./ASSEMBLY-MANUAL.md) | Step-by-step build instructions |
-| [research/OPEN-COOKER.md](./research/OPEN-COOKER.md) | Vision for an open-source cooking platform |
-| [research/EXPERIMENTS.md](./research/EXPERIMENTS.md) | Hackability experiments (Cookidoo, TILLREDA, etc.) |
-| [research/MARKET-RESEARCH.md](./research/MARKET-RESEARCH.md) | Multi-cooker market analysis |
-| [research/FUTURE-IDEAS.md](./research/FUTURE-IDEAS.md) | Recipe scaling, chopping, future features |
 
 ---
 
