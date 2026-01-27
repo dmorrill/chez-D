@@ -157,6 +157,46 @@ Every time a human steps in, that's a label:
 
 Make interventions easy to log: a button, a voice command, a keyboard press. Capture the 5 seconds before and after. This is the gradient signal.
 
+### Why Video Isn't Enough
+
+General video (YouTube cooking, etc.) may lift starting capabilities, but it doesn't remove the need for on-robot data. Reading about golf doesn't make you a golfer — you need to swing the club.
+
+**Video gives you:**
+- What movements look like from outside
+- Rough trajectories
+- Visual outcomes
+
+**Video doesn't give you:**
+- Forces and torques (how hard to push, when resistance changes)
+- Proprioception (where the arm *feels* like it is)
+- Contact dynamics (what happens when spatula meets onion)
+- Recovery sequences (what the body does when something slips)
+
+Embodied data requires embodiment to collect.
+
+### Collection Methods
+
+Different methods for collecting on-robot data:
+
+| Method | chez-D Application | What It Captures |
+|--------|-------------------|------------------|
+| **Demonstration while observing** | Cook manually while sensors record | Expert trajectories with full sensor context |
+| **Direct manipulation** | Physically guide the spatula through a stir | Position + force trajectory, "how it should feel" |
+| **Teleoperation** | Control via joystick/keyboard while watching cameras | Human decisions in response to visual/thermal state |
+| **Autonomous + intervention** | Let it run, step in when wrong | Policy boundaries, failure modes, recovery actions |
+
+**How chez-D phases map to collection methods:**
+
+| Phase | Primary Collection Method | Data Type |
+|-------|--------------------------|-----------|
+| v0.1 (observer) | Demonstration while observing | Expert cooking with full sensor logging |
+| v0.2 (coached heat) | Autonomous + intervention | Heat policy performance + stir timing labels |
+| v0.3 (semi-auto) | Autonomous + intervention | Pump policy + remaining stir gaps |
+| v1.0 (full auto) | Autonomous + intervention | Full policy with intervention-labeled failures |
+| Future | Direct manipulation / teleop | Fine-grained trajectory corrections |
+
+Each phase generates different but complementary data. Don't skip phases — each builds the dataset for the next.
+
 ### Data From Day One
 
 Even v0.1 (observer mode) collects valuable data:
