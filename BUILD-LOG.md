@@ -262,7 +262,8 @@
 | 2026-01-25 | Amazon #2 | ~$76.92 | Personal Amazon | ❌ Pending | TILLREDA hack kit |
 | 2026-01-25 | Amazon #3 | $177.11 | Personal Amazon | ✅ Expensed | Caramelized onions test case + organizer |
 | 2026-01-25 | McMaster-Carr #2 | $30.97 | Company Amex | N/A | SS rod for spatula shaft |
-| **Total** | | **~$1,942.71** | | | |
+| 2026-01-27 | Amazon #4 | ~$20 | Personal Amazon | ❌ Pending | FINDAT color stickers (2 packs) |
+| **Total** | | **~$1,962.71** | | | |
 
 ---
 
@@ -1012,7 +1013,8 @@ Before starting TILLREDA hack work, initial here:
 | 2026-01-25 | Amazon #2 | - | ~$76.92 | Ordered - TILLREDA hack kit |
 | 2026-01-25 | Amazon #3 | - | $177.11 | Ordered - Caramelized onions test + organizer |
 | 2026-01-25 | McMaster-Carr #2 | 0125DMORRILL | $30.97 | Ordered, delivers Wed Jan 29 |
-| **Total Ordered** | | | **~$1,942.71** | |
+| 2026-01-27 | Amazon #4 | - | ~$20 | Ordered - FINDAT color stickers |
+| **Total Ordered** | | | **~$1,962.71** | |
 
 ---
 
@@ -1131,6 +1133,11 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 | ☐ | JST Servo Connector Kit | 2 | 🟡 STIRRING | 3 | Dynamixel power wiring |
 | ☐ | IRIS USA 44-Drawer Organizer | 1 | ⚪ TOOLS | 8 | Small parts storage |
 
+#### Amazon #4 - Organization (Expected: Jan 29-31)
+| ✓ | Item | Qty | Subsystem | Bin | Notes |
+|---|------|-----|-----------|-----|-------|
+| ☐ | FINDAT 1" Color Dot Stickers (350 pcs) | 2 | ⚪ TOOLS | 8 | For labeling parts by subsystem |
+
 #### McMaster-Carr #1 & #2 (Expected: Jan 29)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
@@ -1187,6 +1194,22 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 > ✅ **All major parts for caramelized onions test case have been ordered!**
 >
 > ⏳ **Spatula adapter:** Wait for Dynamixel (early Feb), inspect included horn, then decide approach. See "Spatula Adapter Research" in Phase 2 section for full options.
+
+### Amazon Order #4 (Organization Supplies)
+**Order Date**: January 27, 2026
+**Order Total**: ~$20
+**Payment**: Personal Amazon
+
+| Item | Price | Qty | Status | Notes |
+|------|-------|-----|--------|-------|
+| FINDAT 10 Colors 1" Vinyl Dot Stickers (350 pcs) | ~$10 | 2 | Ordered | Waterproof, writable, removable |
+| **Total** | | | **~$20** | |
+
+**Notes**:
+- For color-coding parts by subsystem during receiving
+- Colors: red, orange, yellow, green, blue, purple, pink, black, white, gray (using 8 of 10)
+
+---
 
 ### Optional Future Orders
 | Item | Est. Price | Source | Notes |
