@@ -30,6 +30,10 @@ Rich sensory feedback + adaptive search beats rigid pre-planning. Instead of req
 
 Progress comes from small, consistent improvements guided by real feedback — not from trying to solve the general problem upfront. Each job exposes new variability; handling that variability expands what the system can do. The plan is not to leap from lab demo to capable robot, but to climb the gradient of real-world variability and capture more of the spectrum.
 
+### Get Paid to Eat the Spectrum
+
+Deploy early. Imperfect systems doing real jobs generate value AND the data needed to improve — especially intervention data when humans step in. Those interventions are the gradient signal pointing where the system must grow. This data is tailor-made for your robots; no one else can collect it. Iterate on the whole system fast enough to reach general usefulness — eating more of the spectrum of jobs to be done — before giant-leap approaches do.
+
 ## Skill Tree
 
 Skills the onion job builds, and what they unlock:
