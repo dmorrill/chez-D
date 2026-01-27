@@ -31,7 +31,26 @@ growing?   fetching   mise en   stirring            putting away
 - Recipe planning (what can we make with what we have?)
 - Delivery integration (robot unpacks when package arrives)
 
-All share: **data infrastructure**, **skill primitives** (grip, sense, verify), **intervention logging**.
+All share: **data infrastructure**, **skill primitives**, **intervention logging**.
+
+### Shared Skills Across Kitchen Robots
+
+Skills and data transfer between specialized kitchen robots:
+
+| Skill Primitive | chez-D (cooking) | Dish Robot | Fetch Robot | Prep Robot |
+|-----------------|------------------|------------|-------------|------------|
+| **Hold tool securely** | Spatula | Scrub brush | Grip handles | Knife |
+| **Detect tool state** | In food vs air | In water vs air | Carrying vs empty | Cutting vs not |
+| **Verify action effect** | Stirring resistance | Scrubbing friction | Object moved | Cut completed |
+| **Sense temperature** | Pan temp | Water temp | Fridge temp | — |
+| **Detect "done"** | Caramelization | Clean enough | Item in place | Chopped fine enough |
+| **Handle failure** | Burning → reduce heat | Stuck food → scrub harder | Dropped → pick up | Slipped → re-grip |
+
+**Data infrastructure that transfers:**
+- Same logging format, same timestamp sync, same intervention protocol
+- Models trained on chez-D force/torque data inform dish robot scrubbing
+- Visual "doneness" detection generalizes (brown onions → clean plate → organized shelf)
+- Failure recovery patterns learned on one robot seed others
 
 chez-D is the first node. The cooking data we collect informs the whole ecosystem.
 
@@ -119,9 +138,11 @@ Skills the onion job builds, and what they unlock:
 |--------|--------|------|-----|
 | Thermal image | MLX90640 | 4-8 Hz | Temperature distribution, hot spots, burn prediction |
 | Visual image | HQ Camera | 30 Hz | Color, texture, caramelization state |
+| **Audio** | USB Microphone | 16+ kHz | **Sizzle, bubbling, "sounds wrong" — info-dense, mostly ignored by others** |
 | Pan temperature | Thermocouple | 10 Hz | Ground truth temp at contact point |
 | Spatula force | Load cell | 50+ Hz | Resistance, stuck food, tool-in-medium |
 | Motor state | Dynamixel | 50+ Hz | Position, velocity, torque (current) |
+| Ambient conditions | DHT22 or similar | 1 Hz | Room temp, humidity — affects cooking dynamics |
 | Heat commands | Software | On change | What the system commanded |
 | Pump commands | Software | On change | Water additions |
 | **Interventions** | Human input | On event | **THE MOST VALUABLE DATA** |
@@ -170,6 +191,33 @@ Don't wait for "real" training runs. Capture:
 - Even just the thermal camera watching an empty pan heat up
 
 This data compounds. A year from now, you'll wish you had the data from today.
+
+### Data Moat Strategy
+
+Big companies have resources, but hobbyists can out-collect them through nuance and longevity:
+
+| Big Company Advantage | Hobbyist Counter-Advantage |
+|-----------------------|---------------------------|
+| More resources | N identical test kitchens. Hobbyists have N *different* kitchens — better for generalization |
+| Dedicated researchers | Research sprints end. Hobbyists cook dinner every day for years |
+| Clean data pipelines | May discard "messy" runs. Hobbyists keep failures, saves, edge cases |
+| Professional annotations | Check-box labels. Hobbyists log *why* it felt wrong |
+| Proprietary moats | Can't share. Hobbyists can pool across a community |
+
+**Capture what others ignore:**
+
+| Data Type | Why It Matters | Why Others Miss It |
+|-----------|---------------|-------------------|
+| **Audio** | Sizzle is information-dense. Cooks use it constantly. | Not "standard" robot sensing |
+| **Ingredient variability** | These onions vs those. Fresh vs old. Yellow vs white. | Labs standardize ingredients |
+| **Equipment drift** | Spatula wears, burner gets uneven, thermocouple drifts | Labs replace equipment |
+| **Recovery trajectories** | The *sequence* of actions to save a failing cook | Labs discard failed runs |
+| **Subjective outcomes** | "Too sweet" / "perfect" / "I like it darker" | Labs optimize for "done" |
+| **Ambient conditions** | Humidity, altitude, room temp affect cooking | Controlled environments |
+| **Ingredient provenance** | Source, age since purchase, storage conditions | Standardized test ingredients |
+| **Multi-cook correlation** | Same recipe 100x across seasons, moods, batches | Sprint-based research |
+
+**The moat**: Years of daily cooking with rich logging > weeks of research sprints. Diversity of real conditions > controlled lab environments. Community data pooling > proprietary silos.
 
 ## Key Documents
 
