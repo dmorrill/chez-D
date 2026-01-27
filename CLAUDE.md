@@ -6,6 +6,35 @@ chez-D is a DIY robot chef project — more precisely, a **cooking skill acquisi
 
 **Current Status:** Parts arriving Jan 27-30, 2026. Build starts Jan 30.
 
+## Ecosystem Vision
+
+We're not trying to solve general robot manipulation. We're going **deep on food** — the entire supply chain from sourcing to cleanup.
+
+```
+SOURCING → STORAGE → PREP → COOKING → SERVING → CLEANUP
+   │          │        │        │          │         │
+ordering   unpacking  chopping  chez-D    plating   dishes
+inventory  organizing measuring heat      portions  surfaces
+growing?   fetching   mise en   stirring            putting away
+           rotation   place     timing
+```
+
+**Multiple specialized robots**, not one do-everything arm:
+- **Cooking robot** (chez-D) — heat, stir, dispense, sense
+- **Dish robot** — wet/dirty environment, different form factor
+- **Fetch/organize robot** — mobile base, cabinet access
+- **Prep robot** — cutting, measuring (high precision, maybe last)
+
+**Digital automation layer**:
+- Inventory tracking (what's in the fridge, what's expiring)
+- Auto-ordering (low stock → delivery scheduled)
+- Recipe planning (what can we make with what we have?)
+- Delivery integration (robot unpacks when package arrives)
+
+All share: **data infrastructure**, **skill primitives** (grip, sense, verify), **intervention logging**.
+
+chez-D is the first node. The cooking data we collect informs the whole ecosystem.
+
 ## Design Philosophy
 
 ### Skills Unlock Jobs, Jobs Teach Specifics
