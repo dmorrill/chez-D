@@ -66,6 +66,68 @@ Skills the onion job builds, and what they unlock:
 | About to burn | Thermal spike, color change | Reduce heat immediately |
 | Stirring air | Load cell + current mismatch | Reposition |
 
+## Data Collection Strategy
+
+**Robotics is data-bottlenecked.** The architectures exist (Diffusion Policy, transformer-based control, etc.). What doesn't exist is the training data. You can't download it — it has to come from robots in the world. Every cook is a data collection run.
+
+### What to Capture
+
+| Stream | Sensor | Rate | Why |
+|--------|--------|------|-----|
+| Thermal image | MLX90640 | 4-8 Hz | Temperature distribution, hot spots, burn prediction |
+| Visual image | HQ Camera | 30 Hz | Color, texture, caramelization state |
+| Pan temperature | Thermocouple | 10 Hz | Ground truth temp at contact point |
+| Spatula force | Load cell | 50+ Hz | Resistance, stuck food, tool-in-medium |
+| Motor state | Dynamixel | 50+ Hz | Position, velocity, torque (current) |
+| Heat commands | Software | On change | What the system commanded |
+| Pump commands | Software | On change | Water additions |
+| **Interventions** | Human input | On event | **THE MOST VALUABLE DATA** |
+
+### Intervention Logging
+
+Every time a human steps in, that's a label:
+- **Stir intervention**: System should have stirred but didn't → when + sensor state at that moment
+- **Heat intervention**: Human adjusted heat → what sensors showed, what human changed it to
+- **Water intervention**: Human added water → conditions that triggered it
+- **Save intervention**: Human prevented burn/failure → critical near-miss data
+
+Make interventions easy to log: a button, a voice command, a keyboard press. Capture the 5 seconds before and after. This is the gradient signal.
+
+### Data From Day One
+
+Even v0.1 (observer mode) collects valuable data:
+
+| Phase | What We Collect | What It Teaches |
+|-------|-----------------|-----------------|
+| v0.1 | Sensor streams + human timestamps of stir/adjust | Baseline dynamics, what "good" looks like |
+| v0.2 | Above + system prompts + human response timing | When prompts were right/wrong |
+| v0.3 | Above + pump commands + stir interventions | Pump timing, stirring gaps |
+| v1.0 | Above + full motor trajectory + any interventions | End-to-end policy data |
+
+### Storage Format
+
+```
+/data/cooks/
+  2026-02-03_v0.1_onions_001/
+    thermal/          # PNG frames, timestamped
+    visual/           # PNG frames, timestamped
+    sensors.parquet   # Time-series: temp, load, motor state
+    events.jsonl      # Commands, state changes, interventions
+    metadata.json     # Cook version, outcome, notes
+```
+
+Timestamp everything. Sync all streams to a common clock. Make it easy to replay any moment.
+
+### Smallest Data Counts
+
+Don't wait for "real" training runs. Capture:
+- Sensor calibration sessions (what does "room temp" look like?)
+- Failed boots and error states (what does "broken" look like?)
+- Manual cooking while system watches (expert demonstrations)
+- Even just the thermal camera watching an empty pan heat up
+
+This data compounds. A year from now, you'll wish you had the data from today.
+
 ## Key Documents
 
 - **BUILD-LOG.md** - Master tracking doc: orders, receiving checklist, TDD validation, schedule
