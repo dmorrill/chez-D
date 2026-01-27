@@ -2,9 +2,61 @@
 
 ## Project Overview
 
-chez-D is a DIY robot chef project. The goal is to build an automated cooking system that can caramelize onions without burning them.
+chez-D is a DIY robot chef project — more precisely, a **cooking skill acquisition platform**. Caramelized onions is the first job, but the real goal is building composable skills that unlock increasingly complex cooking tasks.
 
 **Current Status:** Parts arriving Jan 27-30, 2026. Build starts Jan 30.
+
+## Design Philosophy
+
+### Skills Unlock Jobs, Jobs Teach Specifics
+
+Each skill we build unlocks a set of jobs. Doing those jobs teaches the system specifics about applying that skill in context. This compounds:
+
+```
+Learn skill → Unlock jobs → Do jobs → Learn specifics → Refine skill → Unlock more jobs
+```
+
+**Don't think "how do we caramelize onions?" — think "what skills does caramelizing onions require, and what else do those skills enable?"**
+
+### Skills Have Prerequisites
+
+Skills decompose downward into prerequisites. Before you can stir, you must hold a tool. Before you can use the right tool, you must detect what's in hand. Each prerequisite is itself a skill that unlocks other capabilities.
+
+### Search + Feedback Over Pre-Planning
+
+Rich sensory feedback + adaptive search beats rigid pre-planning. Instead of requiring exact positions, the system should explore, feel resistance, detect errors, and adjust. Example: detect if the spatula is actually in the food vs. waving in air (motor current + load cell should differ).
+
+## Skill Tree
+
+Skills the onion job builds, and what they unlock:
+
+### Fundamental Skills (Prerequisites)
+
+| Skill | Prerequisites | How We Validate |
+|-------|---------------|-----------------|
+| **Hold tool securely** | Attachment intact | Torque feedback shows expected resistance |
+| **Detect tool state** | Sensors working | Can distinguish: in food, in air, hitting pan edge |
+| **Verify action effect** | Above two | Stirring motion + resistance = actually stirring |
+| **Find pan/food** | Vision + position | Probe to locate edges, find where food accumulates |
+
+### Cooking Skills (What Onions Teach)
+
+| Skill | How Onions Teach It | Jobs It Unlocks |
+|-------|---------------------|-----------------|
+| **Heat control with feedback** | Target temp, detect "about to burn", back off | Sautéing, reducing, toasting, roux |
+| **Stirring with force sensing** | Feel resistance, adjust pressure, find stuck bits | Risotto, polenta, scrambled eggs, sauces |
+| **Liquid dispensing on demand** | Detect sticking → add water | Deglazing, building sauces, adding stock |
+| **Doneness detection** | Visual + thermal signature of caramelization | Any cooking task with a target state |
+
+### Failure Modes to Detect
+
+| Failure | Detection Method | Response |
+|---------|------------------|----------|
+| Spatula not in food | Motor current too low for motion | Lower spatula, re-probe |
+| Tool came loose | Sudden loss of resistance | Stop, alert |
+| Food stuck to pan | Resistance spike, visual browning | Add water, increase scraping force |
+| About to burn | Thermal spike, color change | Reduce heat immediately |
+| Stirring air | Load cell + current mismatch | Reposition |
 
 ## Key Documents
 
