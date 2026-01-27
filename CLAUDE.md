@@ -35,6 +35,20 @@ All share: **data infrastructure**, **skill primitives** (grip, sense, verify), 
 
 chez-D is the first node. The cooking data we collect informs the whole ecosystem.
 
+### Why Start Here
+
+chez-D serves multiple purposes simultaneously:
+
+| Purpose | What It Builds |
+|---------|----------------|
+| **Human learning** | Skills in hardware, sensors, control systems, debugging |
+| **Proof of concept** | Caramelized onions works end-to-end |
+| **Test bed** | Data infrastructure, intervention logging, control software |
+| **Confidence** | Foundation for larger ambitions ("I can do this") |
+| **Ecosystem seed** | Patterns and primitives that transfer to other kitchen robots |
+
+The onions aren't the point. The onions are the vehicle for building everything else — the skills, the infrastructure, the data practices, and the confidence to pursue the full ecosystem.
+
 ## Design Philosophy
 
 ### Skills Unlock Jobs, Jobs Teach Specifics
