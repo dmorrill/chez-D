@@ -26,6 +26,10 @@ Skills decompose downward into prerequisites. Before you can stir, you must hold
 
 Rich sensory feedback + adaptive search beats rigid pre-planning. Instead of requiring exact positions, the system should explore, feel resistance, detect errors, and adjust. Example: detect if the spatula is actually in the food vs. waving in air (motor current + load cell should differ).
 
+### Gradient Ascent Over Leaps
+
+Progress comes from small, consistent improvements guided by real feedback — not from trying to solve the general problem upfront. Each job exposes new variability; handling that variability expands what the system can do. The plan is not to leap from lab demo to capable robot, but to climb the gradient of real-world variability and capture more of the spectrum.
+
 ## Skill Tree
 
 Skills the onion job builds, and what they unlock:
