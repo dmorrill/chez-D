@@ -1085,53 +1085,56 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
 | ☐ | ANNIMOS 25kg Servo | 1 | 🟡 STIRRING | 3 | Basic stirring |
-| ☐ | MG996R Servo 4-pack | 1 | 🟡 STIRRING | 3 | Backups |
-| ☐ | Load Cell + HX711 (4 sets) | 1 | 🟢 SENSING | 4 | Weight sensing |
-| ☐ | K-Type Thermocouple TP20 | 1 | 🟢 SENSING | 4 | Backup probe |
-| ☐ | 12V 5A Power Supply | 1 | 🔴 CONTROL | 1 | Pumps/servos/Dynamixel |
-| ☐ | CanaKit 45W USB-C PSU | 1 | 🔴 CONTROL | 1 | Pi 5 power |
+| ✅ | MG996R Servo 4-pack | 1 | 🟡 STIRRING | 3 | Backups — received Jan 28 |
+| ✅ | Load Cell + HX711 (4 sets) | 1 | 🟢 SENSING | 4 | Weight sensing — received Jan 28 |
+| ✅ | K-Type Thermocouple TP20 | 1 | 🟢 SENSING | 4 | Backup probe — received Jan 28 |
+| ✅ | 12V 5A Power Supply | 1 | 🔴 CONTROL | 1 | ALITOVE 12V 5A — received Jan 28 |
+| ✅ | CanaKit 45W USB-C PSU | 1 | 🔴 CONTROL | 1 | Pi 5 power — received Jan 28 (got 2, 1 spare) |
 | ☐ | 2020 Extrusion 10pk (48") | 1 | 🟣 FRAME | 6 | ⚠️ Large/heavy |
-| ☐ | 2020 Corner Bracket Kit | 1 | 🟣 FRAME | 6 | 20 sets |
-| ☐ | T-Slot Nut Kit (200pcs) | 1 | 🟣 FRAME | 6 | Small parts |
-| ☐ | E-Stop Button | 1 | ⚫ SAFETY | 7 | Critical |
+| ✅ | 2020 Corner Bracket Kit | 1 | 🟣 FRAME | 6 | 20 sets — received Jan 28 |
+| ✅ | T-Slot Nut Kit (200pcs) | 1 | 🟣 FRAME | 6 | Small parts — received Jan 28 |
+| ✅ | E-Stop Button | 1 | ⚫ SAFETY | 7 | Critical — received Jan 28 |
 | ☐ | SanDisk 64GB MicroSD | 1 | 🔴 CONTROL | 1 | A2 rating |
-| ☐ | Dupont Jumper Wires | 1 | 🔴 CONTROL | 1 | 120pcs |
-| ☐ | Breadboard 3-pack | 1 | 🔴 CONTROL | 1 | |
+| ✅ | Dupont Jumper Wires | 1 | 🔴 CONTROL | 1 | 120pcs — received Jan 28 |
+| ✅ | Breadboard 3-pack | 1 | 🔴 CONTROL | 1 | ELEGOO — received Jan 28 |
 | ☐ | --- **TOOLS** --- | | ⚪ TOOLS | 8 | |
-| ☐ | ANBES Soldering Iron Kit | 1 | ⚪ TOOLS | 8 | |
-| ☐ | PINECIL Soldering Iron | 1 | ⚪ TOOLS | 8 | Portable |
-| ☐ | AstroAI Multimeter | 1 | ⚪ TOOLS | 8 | |
+| ✅ | ANBES Soldering Iron Kit | 1 | ⚪ TOOLS | 8 | Received as Plusivo Kit — received Jan 28 |
+| ✅ | QuinTech Solder Flux Pen (10ml) | 1 | ⚪ TOOLS | 8 | Add-on/bonus item — received Jan 28 |
+| ✅ | PINECIL Soldering Iron | 1 | ⚪ TOOLS | 8 | Pine64 Smart Soldering Iron — received Jan 28 |
+| ✅ | AstroAI Multimeter | 1 | ⚪ TOOLS | 8 | DM6000AR TRMS — received Jan 28 |
 | ☐ | Wire Stripper/Crimper | 1 | ⚪ TOOLS | 8 | |
-| ☐ | Heat Shrink Kit | 1 | ⚪ TOOLS | 8 | |
-| ☐ | Allen Key Set | 1 | ⚪ TOOLS | 8 | |
-| ☐ | Screwdriver Set | 1 | ⚪ TOOLS | 8 | |
+| ✅ | Heat Shrink Kit | 1 | ⚪ TOOLS | 8 | Ginsco 580pcs 2:1 — received Jan 28 |
+| ✅ | Electrical Tape Set (multi-color) | 1 | ⚪ TOOLS | 8 | Add-on/bonus item — received Jan 28 |
+| ✅ | Allen Key Set | 1 | ⚪ TOOLS | 8 | Wiha ErgoStar 22pc SAE+Metric — received Jan 28 |
+| ✅ | Allen Key Set #2 | 1 | ⚪ TOOLS | 8 | ELEAD 27pc Ball End + T-handle — received Jan 28 |
+| ✅ | Screwdriver Set | 1 | ⚪ TOOLS | 8 | Eklind PSD — received Jan 28 |
 | ☐ | Flush Cutters | 1 | ⚪ TOOLS | 8 | |
 | ☐ | Helping Hands | 1 | ⚪ TOOLS | 8 | |
-| ☐ | Zip Ties | 1 | ⚪ TOOLS | 8 | |
+| ✅ | Zip Ties | 1 | ⚪ TOOLS | 8 | ANDSON 400pcs (4/6/8/12") — received Jan 28 |
 | ☐ | Anti-Static Wrist Strap | 1 | ⚪ TOOLS | 8 | |
 | ☐ | Electronics Organizer | 1 | ⚪ TOOLS | 8 | |
 
 #### Amazon #2 - TILLREDA Hack (Expected: Jan 28-30)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
-| ☐ | ELEGOO Nano Board 3-Pack | 1 | 🟠 HEATING | 2 | Arduino-compatible |
+| ✅ | ELEGOO Nano Board 3-Pack | 1 | 🟠 HEATING | 2 | Arduino-compatible — received Jan 28 |
 | ☐ | 4N35 Optocoupler 10-Pack | 1 | 🟠 HEATING | 2 | Isolation |
-| ☐ | 3.5mm Panel Mount 20-Pack | 1 | 🟠 HEATING | 2 | Connectors |
-| ☐ | 3.5mm Audio Cable 1.5ft | 1 | 🟠 HEATING | 2 | 3-pack |
+| ✅ | 3.5mm Panel Mount 20-Pack | 1 | 🟠 HEATING | 2 | Connectors — received Jan 28 |
+| ✅ | 3.5mm Audio Cable 1.5ft | 1 | 🟠 HEATING | 2 | 3-pack — received Jan 28 |
 | ☐ | 3.5mm Audio Cable 3ft | 1 | 🟠 HEATING | 2 | 3-pack |
 | ☐ | Resistor Kit | 1 | 🟠 HEATING | 2 | |
-| ☐ | PCB Prototype Boards | 1 | 🟠 HEATING | 2 | 32pcs |
+| ✅ | PCB Prototype Boards | 1 | 🟠 HEATING | 2 | 32pcs — received Jan 28 |
 
 #### Amazon #3 - Caramelized Onions Test (Expected: Jan 28-30)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
-| ☐ | U-Taste Silicone Spatula Set (Red) | 1 | 🟡 STIRRING | 3 | 600°F heat-resistant |
-| ☐ | U-Taste Silicone Spatula Set (Black) | 1 | 🟡 STIRRING | 3 | Backup set |
+| ✅ | U-Taste Silicone Spatula Set (Red) | 1 | 🟡 STIRRING | 3 | 600°F heat-resistant — received Jan 28 |
+| ✅ | U-Taste Silicone Spatula Set (Black) | 1 | 🟡 STIRRING | 3 | Backup set — received Jan 28 |
 | ☐ | FOMITO 11" Magic Arm + Clamp | 1 | 🟣 FRAME | 6 | HQ camera mount |
-| ☐ | ChromLives 11" Magic Arm + Clamp | 1 | 🟣 FRAME | 6 | Thermal camera mount |
+| ✅ | ChromLives 11" Magic Arm + Clamp | 1 | 🟣 FRAME | 6 | Thermal camera mount — received Jan 28 |
 | ☐ | 18 AWG Inline Fuse Holder Kit | 1 | ⚫ SAFETY | 7 | 5A for Dynamixel |
 | ☐ | JST Servo Connector Kit | 2 | 🟡 STIRRING | 3 | Dynamixel power wiring |
-| ☐ | IRIS USA 44-Drawer Organizer | 1 | ⚪ TOOLS | 8 | Small parts storage |
+| ✅ | IRIS USA 44-Drawer Organizer | 1 | ⚪ TOOLS | 8 | Small parts storage — received Jan 28 |
 
 #### Amazon #4 - Organization (Expected: Jan 29-31)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
@@ -1141,8 +1144,8 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 #### McMaster-Carr #1 & #2 (Expected: Jan 29)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
-| ☐ | FDA Silicone Tubing 10ft | 2 | 🔵 DISPENSING | 5 | 20ft total |
-| ☐ | 304 SS Rod 6mm × 1ft | 2 | 🟡 STIRRING | 3 | Spatula shaft + spare |
+| ✅ | FDA Silicone Tubing 10ft | 2 | 🔵 DISPENSING | 5 | 20ft total — received Jan 28 |
+| ✅ | 304 SS Rod 6mm × 1ft | 2 | 🟡 STIRRING | 3 | Spatula shaft + spare — received Jan 28 |
 
 #### IKEA (Expected: Jan 30)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
