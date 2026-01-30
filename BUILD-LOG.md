@@ -1068,18 +1068,19 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 #### Adafruit (Expected: Jan 27-28)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
-| ☐ | Raspberry Pi 5 8GB | 1 | 🔴 CONTROL | 1 | Main controller |
-| ☐ | Peristaltic Pump 12V | 6 | 🔵 DISPENSING | 5 | 4 + 2 spares |
-| ☐ | L293D Motor Driver | 1 | 🔵 DISPENSING | 5 | Pump control |
-| ☐ | Silicone Tubing 1m | 1 | 🔵 DISPENSING | 5 | Spare |
-| ☐ | PCA9685 PWM Driver | 1 | 🟡 STIRRING | 3 | Servo control |
-| ☐ | Pi 5 Camera Cable 500mm | 3 | 🟢 SENSING | 4 | 1 + 2 spares |
-| ☐ | STEMMA QT Cable 100mm | 5 | 🟢 SENSING | 4 | I2C cables |
-| ☐ | MLX90640 Thermal Cam | 1 | 🟢 SENSING | 4 | ⚠️ Fragile - $75 |
-| ☐ | K-Type Thermocouple | 3 | 🟢 SENSING | 4 | 1 + 2 spares |
-| ☐ | MAX31855 Amp | 1 | 🟢 SENSING | 4 | Thermocouple interface |
-| ☐ | HQ Camera 12.3MP | 1 | 🟢 SENSING | 4 | ⚠️ Fragile - $55 |
-| ☐ | 6mm Wide Angle Lens | 1 | 🟢 SENSING | 4 | CS-mount |
+| ✅ | Raspberry Pi 5 8GB | 1 | 🔴 CONTROL | 1 | Main controller — received Jan 30 |
+| ✅ | Peristaltic Pump 12V | 6 | 🔵 DISPENSING | 5 | 4 + 2 spares — received Jan 30 |
+| ✅ | L293D Motor Driver | 1 | 🔵 DISPENSING | 5 | Pump control — received Jan 30 |
+| ✅ | Silicone Tubing 1m | 1 | 🔵 DISPENSING | 5 | Spare — received Jan 30 |
+| ✅ | PCA9685 PWM Driver | 1 | 🟡 STIRRING | 3 | Servo control — received Jan 30 |
+| ✅ | Pi 5 Camera Cable 500mm | 3 | 🟢 SENSING | 4 | 1 + 2 spares — received Jan 30 |
+| ✅ | STEMMA QT Cable 100mm | 5 | 🟢 SENSING | 4 | I2C cables — received Jan 30 |
+| ✅ | MLX90640 Thermal Cam | 1 | 🟢 SENSING | 4 | ⚠️ Fragile - $75 — received Jan 30 |
+| ✅ | K-Type Thermocouple | 3 | 🟢 SENSING | 4 | 1 + 2 spares — received Jan 30 |
+| ✅ | MAX31855 Amp | 1 | 🟢 SENSING | 4 | Thermocouple interface — received Jan 30 |
+| ✅ | Adafruit KB2040 (BONUS) | 1 | 🔴 CONTROL | 1 | RP2040 board - unexpected bonus! — received Jan 30 |
+| ✅ | HQ Camera 12.3MP | 1 | 🟢 SENSING | 4 | ⚠️ Fragile - $55 — received Jan 30 |
+| ✅ | 6mm Wide Angle Lens | 1 | 🟢 SENSING | 4 | CS-mount — received Jan 30 |
 
 #### Amazon #1 (Expected: Jan 27-29)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
