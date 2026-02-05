@@ -1151,7 +1151,12 @@ Claude: That's your MAX31855 Thermocouple Amplifier (Adafruit).
 #### IKEA (Expected: Jan 30)
 | ✓ | Item | Qty | Subsystem | Bin | Notes |
 |---|------|-----|-----------|-----|-------|
-| ☐ | TILLREDA Induction Cooktop | 1 | 🟠 HEATING | 2 | ⚠️ Do not hack until safety review |
+| ✅ | TILLREDA Induction Cooktop | 1 | 🟠 HEATING | 2 | ⚠️ Do not hack until safety review — received Jan 30 |
+
+#### Kitchen Lab Equipment
+| ✓ | Item | Qty | Notes |
+|---|------|-----|-------|
+| ✅ | Thermomix | 1 | Kitchen lab setup — received Jan 30 |
 
 ---
 
