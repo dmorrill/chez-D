@@ -1,0 +1,19 @@
+{
+  "name": "chez-d-api",
+  "version": "0.1.0",
+  "description": "chez-D robot chef API - recipe management and execution",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "import": "node src/scripts/import-recipes.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "better-sqlite3": "^11.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {}
+}
